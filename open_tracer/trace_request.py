@@ -32,3 +32,31 @@ class TraceRequest(object):
         TraceRequest.__trace_id = trace_id
         TraceRequest.__parent_id = parent_id
         TraceRequest.__child_id = child_id
+
+    def get_root_id(self):
+        """
+        :summary:
+        :return:
+        """
+        return TraceRequest.__trace_id
+
+    def get_parent_id(self):
+        """
+
+        :return:
+        """
+        return TraceRequest.__parent_id
+
+    def get_child_id(self):
+        """
+        :summary:
+        :return:
+        """
+        return TraceRequest.__child_id
+
+    def get_all_ids(self):
+        """
+
+        :return:
+        """
+        return TraceRequest.__trace_id, TraceRequest.__parent_id, TraceRequest.__child_id
