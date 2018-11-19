@@ -5,6 +5,7 @@ author: arun.rs
 from datetime import datetime
 from requests import request
 from trace import trace_resource
+from trace_request import TraceRequest
 
 def service(type, url, **kwargs):
     """
@@ -16,7 +17,7 @@ def service(type, url, **kwargs):
     """
     if not 'headers' in kwargs:
         headers = {}
-    #headers['trace_id'], headers['parent_id'], headers['child_id'] =
+    headers['trace_id'], headers['parent_id'], headers['child_id'] = TraceRequest().get_all_ids()
     status = True
     start_time = datetime.now()
     try:
