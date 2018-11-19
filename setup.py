@@ -7,8 +7,8 @@ setup(
   description = 'Open-tracer : To trace every applications request',
   author = 'arun.rs',
   author_email = 'arunrs@uninstall.io',
-  url = 'https://github.com/rsarun-uninstallio/apprequest',
-  download_url = 'https://github.com/rsarun-uninstallio/apprequest/archive/v0.1.tar.gz',
+  url = 'https://github.com/rsarun-uninstallio/open_tracer',
+  download_url = 'https://github.com/rsarun-uninstallio/open_tracer/archive/v1.0.tar.gz',
   keywords = ['tracing', 'open_tracing', 'open_tracer'],
   install_requires=['uuid', 'requests', 'datetime', 'logging', 'mysqlclient'],
   classifiers=[  # Optional
