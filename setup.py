@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'open_tracer',
   packages = ['open_tracer'],
-  version = '0.1',
+  version = '1.2',
   license='MIT',
   description = 'Open-tracer : To trace every applications request',
   author = 'arun.rs',
   author_email = 'arunrs@uninstall.io',
   url = 'https://github.com/rsarun-uninstallio/open_tracer',
-  download_url = 'https://github.com/rsarun-uninstallio/open_tracer/archive/v1.0.tar.gz',
+  download_url = 'https://github.com/rsarun-uninstallio/open_tracer/archive/v1.2.tar.gz',
   keywords = ['tracing', 'open_tracing', 'open_tracer'],
   install_requires=['uuid', 'requests', 'datetime', 'logging', 'mysqlclient'],
   classifiers=[  # Optional

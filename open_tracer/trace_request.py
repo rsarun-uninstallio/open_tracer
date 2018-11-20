@@ -59,4 +59,6 @@ class TraceRequest(object):
 
         :return:
         """
+        if not TraceRequest.__trace_id:
+            self.set_trace_id(str(uuid.uuid1()))
         return TraceRequest.__trace_id, TraceRequest.__parent_id, TraceRequest.__child_id

@@ -4,7 +4,7 @@ created: 10th October 2018
 """
 import logging.config
 from trace_request import TraceRequest
-from config.logger_settings import LOG_SETTINGS
+from logger_settings import LOG_SETTINGS
 
 class Logger(logging.LoggerAdapter):
     """
