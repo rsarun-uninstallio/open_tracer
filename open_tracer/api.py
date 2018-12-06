@@ -6,6 +6,7 @@ from datetime import datetime
 from requests import request
 from trace import trace_resource
 from trace_request import TraceRequest
+from utilities import sanitize_urlparams
 
 def service(type, url, **kwargs):
     """
@@ -27,4 +28,4 @@ def service(type, url, **kwargs):
         raise
     finally:
         end_time = datetime.now()
-        trace_resource(type, url, start_time, end_time, status)
+        trace_resource("api", type, sanitize_urlparams(url), start_time, end_time, status)
