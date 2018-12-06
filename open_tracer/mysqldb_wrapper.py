@@ -44,7 +44,7 @@ class MySQLdbWrapper(object):
             raise e
         finally:
             end_time = datetime.now()
-            trace_resource("mysql", "Connecting", start_time, end_time, status)
+            trace_resource("mysql", "Connecting", "", start_time, end_time, status)
 
     def set_cursor(self, cursor_type):
         """
@@ -90,7 +90,7 @@ class MySQLdbWrapper(object):
             raise e
         finally:
             end_time = datetime.now()
-            trace_resource("mysql", query, start_time, end_time, status)
+            trace_resource("mysql", "", query, start_time, end_time, status)
 
     def save(self):
         """
