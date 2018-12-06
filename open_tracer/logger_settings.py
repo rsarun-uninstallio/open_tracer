@@ -32,7 +32,7 @@ LOG_SETTINGS['handlers']['application'] = {
     'class': 'cloghandler.ConcurrentRotatingFileHandler',
     'level': 'DEBUG',
     'formatter': 'standard',
-    'filename': os.path.join(LOG_PATH, 'main.log'),
+    'filename': os.path.join(LOG_PATH, 'application.log'),
     'mode': 'a',
     'maxBytes': 104857600,
     'backupCount': 5,
