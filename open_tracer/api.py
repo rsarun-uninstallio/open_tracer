@@ -28,4 +28,4 @@ def service(type, url, **kwargs):
         raise
     finally:
         end_time = datetime.now()
-        trace_resource("api", type, sanitize_urlparams(url), start_time, end_time, status)
+        trace_resource("api", type, sanitize_urlparams(url), url, start_time, end_time, status)

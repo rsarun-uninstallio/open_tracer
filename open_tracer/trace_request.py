@@ -30,7 +30,10 @@ class TraceRequest(object):
         request ID in its headers
         """
         TraceRequest.__trace_id = trace_id
-        TraceRequest.__parent_id = parent_id
+        if parent_id:
+            TraceRequest.__parent_id = parent_id
+        else:
+
         TraceRequest.__child_id = child_id
 
     def get_root_id(self):
