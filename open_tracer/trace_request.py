@@ -33,7 +33,7 @@ class TraceRequest(object):
         if parent_id:
             TraceRequest.__parent_id = parent_id
         else:
-
+            TraceRequest.__parent_id = trace_id
         TraceRequest.__child_id = child_id
 
     def get_root_id(self):
